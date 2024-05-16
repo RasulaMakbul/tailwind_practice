@@ -6,11 +6,13 @@ const Buttons = ({label, iconUrl}) => {
       text-lg leading-none bg-orange-400 rounded-full text-white border-orange-400"
     >
       {label}
-      <img
-        src={iconUrl}
-        alt="arrow right icon"
-        className="ml-2 rounded-full h5 w-5"
-      />
+      {iconUrl && (
+        <img
+          src={iconUrl}
+          alt="arrow right icon"
+          className="ml-2 rounded-full h5 w-5"
+        />
+      )}
     </button>
   )
 }
